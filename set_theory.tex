@@ -1,0 +1,42 @@
+\section{Set Theory}
+\begin{itemize}
+\bulletitem Notation
+\begin{itemize}
+\bulletitem Set-roster notation \( A = \{ 1,2,3 \} \qquad B = \{ 10,11,12, \ldots ,119 \} \)
+\bulletitem Set-builder notation \( M = \{ x \in S \mid P(x) \} \)
+\bulletitem The empty set \( \emptyset = \{ \} \)
+\bulletitem Powerset \( \mathscr{P}(\{ a,b \}) = \{ \emptyset ,\{ a \} , \{ b \} , \{ a,b \} \} \)
+\end{itemize}
+\bulletitem Operations
+\begin{itemize}
+\bulletitem Membership \( e \in M \)
+\bulletitem Intersection \( A \cap B \)
+\bulletitem Union \( A \cup B \)
+\bulletitem Difference \( A - B \)
+\bulletitem Complement \( A^C \)
+\end{itemize}
+\bulletitem Subset \( A \subseteq B \Leftrightarrow \forall x \in A, x \in B \)
+\begin{itemize}
+\bulletitem Not a subset \( A \not\subseteq B \Leftrightarrow \exists x \in A, x \notin B \)
+\bulletitem Proper subset \( A \subset B \Leftrightarrow \forall x \in A, x \in B \land \exists x \in B, x  \notin A \)
+\bulletitem Equality \( A=B \Leftrightarrow A \subseteq B \land B \subseteq A \)
+\bulletitem Transitivity \( A \subseteq B \land B \subseteq C \rightarrow A \subseteq C \)
+\end{itemize}
+\bulletitem Disjoint sets \( A \cap B = \emptyset \)
+\begin{itemize}
+\bulletitem Partitions \( \{ A_1,A_2, \ldots ,A_n \} \) of set A
+\bulletitem \( A = \bigcup_{i=1}^n A_i \)
+\bulletitem \( \forall a,b \in \{ 1,2, \ldots ,n \}, A_a \cap A_b = \emptyset \lor a=b \)
+\end{itemize}
+\bulletitem Laws
+\begin{itemize}
+\bulletitem Commutative \( A \cap B = B \cap A \)
+\bulletitem Associative \( (A \cap B) \cap C = A \cap (B \cap C) \)
+\bulletitem Distributive \( A \cup (B \cap C) = (A \cup B) \cap (A \cup C) \)
+\bulletitem De Morgan's \( (A \cup B)^C = A^C \cap B^C \)
+\end{itemize}
+\bulletitem Ordered pair \( (a,b)= \{ \{ a \} , \{ a,b \} \} \)
+\bulletitem Cartesian product \( \begin{matrix} A \times B = \{ (a,b) \mid a \in A \land b \in B \}\\ A \times B \times C = \{ (a,b,c) \mid a \in A \land b \in B \land c \in C \} \end{matrix} \)
+\bulletitem Relations \( R \subseteq \{ (x,y) \in A \times B \} \)
+\bulletitem Functions \( \begin{matrix} \forall x \in A, \exists y \in B, (x,y) \in F\\ \forall x \in A \land y \in B \land z \in B, \left( (x,y) \in F \land (x,z) \in F \right) \rightarrow y=z \end{matrix} \)
+\end{itemize}

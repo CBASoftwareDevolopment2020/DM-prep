@@ -1,0 +1,48 @@
+\section{Regular Expressions and Finite-state Automata}
+\begin{itemize}
+\bulletitem Chomsky
+\begin{itemize}
+\bulletitem Regular languages \( \begin{matrix} A \rightarrow a \\ A \rightarrow aB \end{matrix} \)
+\bulletitem Context-free languages \( A \rightarrow \alpha \)
+\bulletitem Context-sensitive languages \( \alpha A \beta \rightarrow \alpha \gamma \beta \)
+\bulletitem Turing-complete languages \( \alpha A \beta \rightarrow \gamma \)
+\end{itemize}
+\bulletitem Formal languages
+\begin{itemize}
+\bulletitem Alphabet \( \Sigma \)
+\bulletitem String over \( \Sigma \)
+\bulletitem Language L over \( \Sigma \)
+\end{itemize}
+\bulletitem Combining languages
+\begin{itemize}
+\bulletitem Concatenation \( LL' = \{ xy \mid x \in L \wedge y \in L' \} \)
+\bulletitem Union \( L \cup L' = \{ x \mid x \in L \vee x \in L' \} \)
+\bulletitem Kleene closure \( L^* = \{ x \mid \text{is a concatenation of strings in L} \} \)
+\end{itemize}
+\bulletitem Regular Expressions
+\begin{itemize}
+\bulletitem Base/terminals \( \emptyset ,\epsilon ,x \mid x \in \Sigma \)
+\bulletitem Recursion/non-terminals
+\begin{itemize}
+\bulletitem \( (rs) \) - r concatenated with s
+\bulletitem \( (r \mid s) \) - r or s
+\bulletitem \( r^* \) - \( r^* \in \{ \epsilon ,r,rr,rrr, \ldots \} \)
+\end{itemize}
+\end{itemize}
+\bulletitem Finite-state automaton
+\begin{itemize}
+\bulletitem Input alphabet \( \Sigma \)
+\bulletitem States \( S \)
+\bulletitem Initial state \( s_0 ,s_0 \in S \)
+\bulletitem Final states \( F \)
+\bulletitem Next-state function \( N : S \times \Sigma \rightarrow S \)
+\end{itemize}
+\bulletitem Eventual-state function \( N^* : S \times \Sigma^* \rightarrow S \)
+\bulletitem Draw \( a(b|cd)^*e \)
+\bulletitem Regular languages
+\begin{itemize}
+\bulletitem can be defined by a regular expression
+\item[]\( \Updownarrow \)
+\bulletitem can be accepted by a finite-state automata
+\end{itemize}
+\end{itemize}

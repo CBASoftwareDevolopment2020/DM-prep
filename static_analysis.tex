@@ -1,0 +1,40 @@
+\section{Static Analysis}
+\begin{itemize}
+\bulletitem Static analysis
+\begin{itemize}
+\bulletitem Soundness: A static analysis is said to be sound if it rejects all faulty programs.
+\bulletitem Completeness: A static analysis is said to be complete if all correct programs passes.
+\bulletitem Process
+\begin{itemize}
+\bulletitem Pre- and Post-conditions
+\bulletitem "Run" code and update state
+\bulletitem Compare state with postcondition
+\end{itemize}
+\end{itemize}
+\bulletitem Hoare logic
+\begin{itemize}
+\bulletitem Hoare tripple \( \{ P \} C \{ Q \} \)
+\bulletitem Skip commands \( \{ P \} skip \{ P \} \)
+\bulletitem Command composition \( \begin{matrix} \{ P \} S \{ Q \}, \{ Q \} T \{ R \}\\ \{ P \} S;T \{ R \} \end{matrix} \)
+\bulletitem Selection \( \begin{matrix} \{ B \land P \} S \{ Q \}, \{ \neg B \land P \} T \{ Q \}\\ \{ P \} if \: B \: then \: S \: else \: T \: endif \{ Q \} \end{matrix} \)
+\bulletitem Iteration \( \begin{matrix} \{ B \land P \} S \{ P \}\\ \{ P \} while \: B \: do \: S \: done \{ \neg B \land P \} \end{matrix} \)
+\end{itemize}
+\bulletitem Design by contract
+\begin{itemize}
+\bulletitem Idea
+\begin{itemize}
+\bulletitem What does contract expect?
+\bulletitem What does contract guarantee?
+\bulletitem What does contract maintain?
+\end{itemize}
+\bulletitem Content
+\begin{itemize}
+\bulletitem Input values and types
+\bulletitem Return values and types
+\bulletitem Error/Exception condition values and types
+\bulletitem Side effects
+\bulletitem Pre- and Post-conditions
+\bulletitem Invariants
+\end{itemize}
+\end{itemize}
+\end{itemize}

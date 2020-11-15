@@ -1,0 +1,48 @@
+\section{Relations}
+\begin{itemize}
+\bulletitem Definition
+\begin{itemize}
+\bulletitem \( \text{When } R \text{ is a relation } x \: R \: y \)
+\bulletitem \( R \subseteq \{ (x,y) \in A \times B \} \)
+\bulletitem \( R^{-1} = \{ (x,y) \in B \times A \mid (x,y) \in R \} \)
+\end{itemize}
+\bulletitem Properties
+\begin{itemize}
+\bulletitem Reflexivity \( \forall x \in A, (x,x) \in R \)
+\bulletitem Symmetry \( \forall x,y \in A, (x,y) \in R \rightarrow (y,x) \in R \)
+\bulletitem Transitivity \( \forall x,y,z \in A, (x,y) \in R \land (y,z) \in R \rightarrow (x,z) \in R \)
+\bulletitem Equivalence relation
+\end{itemize}
+\bulletitem Relation induced by partition \( x \: R \: y \Leftrightarrow \exists A_i ,x \in A_i \land y \in A_i \)
+\begin{itemize}
+\bulletitem Reflexive \( (x \: R \: x) \)
+\begin{itemize}
+\item[]  \( \exists A_i ,x \in A_i \land x \in A_i \) by definition of  \( x \: R \: x \)
+\end{itemize}
+\bulletitem Symmetric \( (x \: R \: y \rightarrow y \: R \: x) \)
+\begin{itemize}
+\item[] \( \exists A_i ,x \in A_i \land y \in A_i \) by definition of  \( x \: R \: y \)
+\end{itemize}
+\bulletitem Transitive \( (x \: R \: y \land y \: R \: z \rightarrow x \: R \: z) \)
+\begin{itemize}
+\item[] \( \exists A_i ,x \in A_i \land y \in A_i \) by definition of  \( x \: R \: y \)
+\item[] \( \exists A_i ,y \in A_i \land z \in A_i \) by definition of  \( y \: R \: z \)
+\item[] \( A_i \cap A_j = \emptyset \lor A_i=A_j \)
+\item[] \( y \in A_i \land y \in A_j \Leftrightarrow y \in A_i \cap A_j \Rightarrow A_i \cap A_j \neq \emptyset \)
+\item[] \( A_i=A_j \Rightarrow x \in A_i \land z \in A_i \) the definition of  \( x \: R \: z \)
+\end{itemize}
+\end{itemize}
+\bulletitem Antisymmmetry
+\begin{itemize}
+\bulletitem Anitsymmetric \( \forall a,b \in A, a \: R \: b \land b \: R \: a \rightarrow a=b \)
+\bulletitem Not antisymmetric \( \exists a,b \in A, a \: R \: b \land b \: R \: a \land a \neq b \)
+\end{itemize}
+\bulletitem Partial ordering
+\begin{itemize}
+\bulletitem Reflexive, antisymmetric, transitive
+\bulletitem \( a \in A \) is maximum if: \( \forall b \in A, b \preceq a \lor b \not\preceq a \)
+\bulletitem \( a \in A \) is greatest if: \( \forall b \in A, b \preceq a \)
+\bulletitem \( a \in A \) is minimum if: \( \forall b \in A, a \preceq b \lor a \not\preceq b \)
+\bulletitem \( a \in A \) is least if: \( \forall b \in A, a \preceq b \)
+\end{itemize}
+\end{itemize}
